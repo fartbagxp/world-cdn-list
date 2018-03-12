@@ -20,6 +20,10 @@ The list of CDN is provided by [Wikipedia](https://en.wikipedia.org/wiki/Content
 
 It would be nice to automatically build a new list (in JSON) and determine the latest set of CIDR blocks for the CDN.
 
+Since a lot of CDNs don't normally publish their listing, one way to figure out their allocated netblocks is to go through whois registration sites such as [IPInfo](https://ipinfo.io) to figure out what it is, but false positives can be made provided it that the allocated blocks could be their entire network, instead of simply the CDN part of a company's business.
+
+## Raw data
+
 * [BootstrapCDN / MaxCDN](https://www.maxcdn.com/one/tutorial/ip-blocks/)
 
 * [Cloudflare](https://www.cloudflare.com/ips/)
@@ -71,15 +75,16 @@ It would be nice to automatically build a new list (in JSON) and determine the l
 * CDN-Tech
 * Cloakfusion
 * GlobalDots
-* MetaCDN
 
 * [Akamai Technologies](https://security.stackexchange.com/questions/38658/firewall-defined-akamai-ip-range)
+* [Alibaba Cloud](https://ipinfo.io/AS45102)
+  * [198.11.128.0/18](https://ipinfo.io/AS45102/198.11.128.0/18) is probably Alibaba Cloud's US CDN.
 * [Amazon CloudFront](https://ip-ranges.amazonaws.com/ip-ranges.json)
-* Aryaka
+* [Aryaka](https://ipinfo.io/AS111790)
 * [Azure CDN](https://blogs.technet.microsoft.com/keithmayer/2013/08/14/windows-azure-datacenter-ip-ranges/#.UwFztPmSxvA)
-* CacheFly
+* [CacheFly](https://ipinfo.io/AS30081)
 * CDN.net
-* CDNetworks
+* [CDNetworks](https://ipinfo.io/AS36408)
 * CDN77 - 185.59.220.0/24 ?
 * CenterServ
 * ChinaCache
@@ -90,15 +95,14 @@ It would be nice to automatically build a new list (in JSON) and determine the l
 * [Fastly](https://api.fastly.com/public-ip-list)
 * Highwinds Network Group
 * HP Cloud Services
-* Incapsula
 * Instart Logic
 * Internap
 * Inxy.hosting
 * Inxyhost.com
 * LeaseWeb
 * [Limelight Networks](https://ipinfo.io/AS22822)
-* Medianova.com[30]
-* MetaCDN
+* Medianova.com
+* [MetaCDN](https://support.metacdn.com/hc/en-us/articles/205983486-IP-Address-Ranges-for-MetaCDN-Site-Accelerator)
 * NACEVI
 * OnApp
 * OVH
